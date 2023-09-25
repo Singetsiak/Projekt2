@@ -1,0 +1,29 @@
+<script>
+    class Kalkulator {
+        constructor(){
+            this.wynik = 0
+        }
+
+        dodaj(a, b){
+            this.wynik = a + b; 
+        }
+        odejmij(a, b){
+            this.wynik = a - b;
+        }
+        razy(a, b){
+            this.wynik = a * b;
+        }
+        podziel(a, b){
+            this.wynik = a / b;
+        }
+        wyswietlWynik(){
+            console.log("Wynik: " + this.wynik)
+        }
+    }
+    const kalkulator1 = new Kalkulator();
+    kalkulator1.razy(5,5)
+    kalkulator1.wyswietlWynik();
+    const kalkulator2 = new Kalkulator();
+    kalkulator2.dodaj(5,5)
+    kalkulator2.wyswietlWynik();
+</script>
